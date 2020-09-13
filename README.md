@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Lenguaje de programación creado por Brendan Eich
+Lenguaje de programación interpretado, creado por [Brendan Eich](https://es.wikipedia.org/wiki/Brendan_Eich)
 
 | Edición | Publicación | Cambios                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | :-----: | :---------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -19,3 +19,92 @@ Lenguaje de programación creado por Brendan Eich
 |    9    |    2018     | ES2018 es ES9.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |   10    |    2019     | ES2019 es ES10.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ESNext  |             | ...y así sucesivamente                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+
+## Características y gramática
+
+### Isomorfismo
+
+Hoy(2020) Javascript es el único lenguaje capaz de ejecutarse en las 3 capas de una aplicaión:
+
+1. Frontend(Javascript).
+2. Backend(Node.js).
+3. Persistencia de Datos(MongoDB, Couch DB, Firebase, etc).
+
+### Que se puede hacer con Javascript?
+
+- Diseño y desarrollo web.
+- Videojuegos.
+- Experiencias 3D, Realidad Aumentada, Realidad Virtual.
+- Controlar hardware(Drones, Robots, Electrodomesticos, etc).
+- Aplicaciones Móviles e Híbridas.
+- Machine Learning y otras IAs.
+
+### Características
+
+- Lenguaje de Alto Nivel.
+- Interpretado.
+- Dinámico.
+- Débilmente Tipado.
+- Multi paradigma.
+- Distingue MAYÚSCULAS y minúsculas.
+- No necesita los puntos y comas al final de cada linea.
+
+### Escribiendo código
+
+Los [**identificadores**](https://# "Funciones, Variables, Clases, etc") deben comenzar con:
+
+- Una letra o
+- Un signo de dolar **\$** o
+- Un guión bajo **\_**
+- Nunca números o caracteres especiales
+
+### Palabras reservadas
+
+Son las palabras que ya estan siendo utilizadas por los lenguajes de programacion y no deberiamos de usar para crear identificadores con esos nombres.
+
+```javascript
+A: abstract;
+B: bolean, break, byte;
+C: case, catch char, class, const , continue;
+D: debugger, default, delete, do, double;
+E: else, enum, export, extends;
+F: false, final, finally, float, for, function;
+G: goto;
+I: if, implements, import, in, instanceof, int, interface;
+L: long;
+N: native, new, null;
+P: package, private, protected, public;
+R: return,
+S: short, static, super, switch, synchronized;
+T: this, throw, throws, transient, true, try, typeof;
+V: var, volatile, void;
+W: while, with;
+```
+
+### Orden del código
+
+Para mejores practicas al escribir código debemos seguir el siguiente orden.
+
+1. Importación de módulos.
+2. Declaración de variables.
+3. Declaración de funciones.
+4. Ejecución de código.
+
+### Tipos de datos
+
+1. **Primitivos**(Se accede directamente al valor).
+
+   - string
+   - number
+   - boolean
+   - null
+   - undefined
+   - NaN
+
+2. **Compuestos**(Se accede a la referencia del valor).
+
+   - object = {}
+   - array = []
+   - function = () {}
+   - class {}
+   - etc.
