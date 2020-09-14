@@ -51,7 +51,7 @@ Hoy(2020) Javascript es el único lenguaje capaz de ejecutarse en las 3 capas de
 
 ### Escribiendo código
 
-Los [**identificadores**](https://# "Funciones, Variables, Clases, etc") deben comenzar con:
+Los [**identificadores**](# "Funciones, Variables, Clases, etc") deben comenzar con:
 
 - Una letra o
 - Un signo de dolar **\$** o
@@ -108,3 +108,67 @@ Para mejores practicas al escribir código debemos seguir el siguiente orden.
    - function = () {}
    - class {}
    - etc.
+
+### Comentarios
+
+Son para que el desarrollador deje notas dentro del código y sea mas sencillo de entender en futuras revisiones o modificaciones del codigo.
+
+```javascript
+//Comentario de una linea
+```
+
+```javascript
+/*Comentario
+de
+múltiples 
+lineas*/
+```
+
+## Variables
+
+**var vs let**
+
+```html
+<script>
+  var hola = "Hola mundo";
+  let hello = "Hello world";
+  console.log(hola);
+  console.log(hello);
+  console.log(window);
+  console.log(window.hola);
+  console.log(window.hello);
+  //bloque
+  var musica = "Rock";
+  console.log("Variable musica antes del bloque", musica);
+  {
+    var musica = "Pop";
+    console.log("Variable musica antes del bloque", musica);
+  }
+  console.log("Variable musica despues del bloque", musica);
+</script>
+```
+
+Si escribimos el codigo anterior en un html y visualizamos la pagina al revisar la consola veeremos lo siguiente:
+
+![](img/1.scriptvarlet.png "script de var y let")
+
+Quiere decir que var tiene un alcance global y se guarda dentro del objeto window(que es toda la ventana del navegador), en node se guardaría dentro del objeto "global".
+
+Pero que pasa si el codigo anterior cambiamos var a let?
+
+```javascript
+//bloque
+let musica = "Rock";
+console.log("Variable musica antes del bloque", musica);
+{
+  let musica = "Pop";
+  console.log("Variable musica antes del bloque", musica);
+}
+console.log("Variable musica despues del bloque", musica);
+```
+
+Observamos la consola
+
+![](img/2.scriptvarlet.png "script de var y let")
+
+Y podemos ver que let si nos respeta cuando lo llamamos dentro de un bloque y fuera de este.
