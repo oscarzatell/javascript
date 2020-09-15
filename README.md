@@ -152,7 +152,7 @@ Si escribimos el codigo anterior en un html y visualizamos la pagina al revisar 
 
 ![](img/1.scriptvarlet.png "script de var y let")
 
-Quiere decir que var tiene un alcance global y se guarda dentro del objeto window(que es toda la ventana del navegador), en node se guardaría dentro del objeto "global".
+Quiere decir que var tiene un alcance global y se guarda dentro del objeto "window"(que es toda la ventana del navegador), en Node.js se guardaría dentro del objeto "global".
 
 Pero que pasa si el codigo anterior cambiamos var a let?
 
@@ -172,3 +172,12 @@ Observamos la consola
 ![](img/2.scriptvarlet.png "script de var y let")
 
 Y podemos ver que let si nos respeta cuando lo llamamos dentro de un bloque y fuera de este.
+
+## Constantes
+
+Se usan para nombrar variables que su valor no va a cambiar
+
+```javascript
+const PI = 3.1416;
+console.log(PI);
+```
