@@ -124,6 +124,32 @@ múltiples
 lineas*/
 ```
 
+---
+
+---
+
+## Objetos Globales
+
+---
+
+### Procesamiento de texto
+
+---
+
+#### String
+
+Cadena de Texto
+
+Se utiliza para representar y manipular una secuencia de caracteres.
+
+##### Propiedades
+
+##### Métodos
+
+---
+
+---
+
 ## Variables
 
 **var vs let**
@@ -181,3 +207,34 @@ Se usan para nombrar variables que su valor no va a cambiar
 const PI = 3.1416;
 console.log(PI);
 ```
+
+las excepciones serían con los objetos **"objet"** y los arreglos **"array"**
+
+```html
+<script>
+  const objeto = {
+    nombre: "Jon",
+    edad: 35,
+  };
+  const colores = ["blanco", "negro", "axul"];
+  console.log(objeto);
+  console.log(colores);
+
+  //Para crear una nueva propiedad en el objeto accedemos con el punto
+  objeto.correo = "jon@omniversal.pro";
+
+  //Hacemos uso de una funcion que tienen los arreglos llamada "push" que nos permite agregar un nuevo elemento.
+  colores.push("naranja");
+
+  console.log(objeto);
+  console.log(colores);
+</script>
+```
+
+Observamos en la consola y podemos ver que los elementos de arreglo y objeto tienen cambios a pesar de ser una constante.
+![](img/3.constantes.png "script de var y let")
+Por que para javascript la constante se sigue refiriendo al mismo objeto o arreglo.
+
+## Strings
+
+Cadenas de texto
