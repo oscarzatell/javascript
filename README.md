@@ -1,5 +1,9 @@
 # Javascript
 
+## Índice
+
+###### Introducción
+
 ## Introducción
 
 Lenguaje de programación interpretado, creado por [Brendan Eich](https://es.wikipedia.org/wiki/Brendan_Eich)
@@ -130,8 +134,6 @@ lineas*/
 
 ## Objetos Globales
 
----
-
 ### Procesamiento de texto
 
 ---
@@ -142,11 +144,132 @@ Cadena de Texto
 
 Se utiliza para representar y manipular una secuencia de caracteres.
 
+Se pueden crear de la siguiente manera:
+
+```javascript
+let nombre = "Oscar";
+let apellido = "Zatell";
+let saludo = new String("Hola mundo");
+```
+
 ##### Propiedades
+
+**String.length**
+
+Sirve para contar los caracteres en un string
+
+```html
+<script>
+  let nombre = "Oscar";
+  let apellido = "Zatell";
+  let saludo = new String("Hola mundo");
+
+  console.log(nombre, apellido, saludo);
+  console.log(nombre.length, apellido.length, saludo.length);
+</script>
+```
+
+![](/img/4.stringleng.png "string.leng")
 
 ##### Métodos
 
----
+**String.fromCharCode()**
+
+Este método devuelve una cadena y no un objeto String.
+
+Debido a que fromCharCode es un método estático de String, usted siempre lo usará como String.fromCharCode()
+
+El siguiene ejemplo devuelve la cadena "ABCDEFGHIJKLMNOPQRSTUVWXYZ".
+Devuelve el valor de la cadena en unicode.
+
+```javascript
+let unic = String.fromCharCode(
+  65,
+  66,
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90
+);
+console.log(unic);
+```
+
+... lo vemos en consola
+![](/img/stringfromcharcode.png)
+
+**String.fromCodePoint()**
+
+**String.prototype.charAt()**
+
+**String.prototype.charCodeAt()**
+
+**String.prototype.codePointAt()**
+
+**String.prototype.concat()**
+
+**String.prototype.endsWith()**
+
+**String.prototype.includes()**
+
+**String.prototype.lastIndexOf()**
+
+**String.prototype.localeCompare()**
+
+**String.prototype.match()**
+
+**String.prototype.normalize()**
+
+**String.prototype.padStart()**
+
+**String.prototype.repeat()**
+
+**String.prototype.replace()**
+
+**String.prototype.search()**
+
+**String.prototype.slice()**
+
+**String.prototype.split()**
+
+**String.prototype.startsWith()**
+
+**String.prototype.substring()**
+
+**String.prototype.toLocaleLowerCase()**
+
+**String.prototype.toLocaleUpperCase()**
+
+**String.prototype.toLowerCase()**
+
+**String.prototype.toString()**
+
+**String.prototype.toUpperCase()**
+
+**String.prototype.trim()**
+
+**String.prototype.valueOf()**
+
+**String.raw()**
 
 ---
 
@@ -232,7 +355,7 @@ las excepciones serían con los objetos **"objet"** y los arreglos **"array"**
 ```
 
 Observamos en la consola y podemos ver que los elementos de arreglo y objeto tienen cambios a pesar de ser una constante.
-![](img/3.constantes.png "script de var y let")
+![](img/3.constantes.png "constantes")
 Por que para javascript la constante se sigue refiriendo al mismo objeto o arreglo.
 
 ## Strings
