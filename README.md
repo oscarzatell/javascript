@@ -2,9 +2,11 @@
 
 ## Índice
 
-###### Introducción
+[Introducción](##introduccion)
 
-## Introducción
+[Características y gramática](##caracteristicas-y-gramatica)
+
+## Introduccion
 
 Lenguaje de programación interpretado, creado por [Brendan Eich](https://es.wikipedia.org/wiki/Brendan_Eich)
 
@@ -24,7 +26,7 @@ Lenguaje de programación interpretado, creado por [Brendan Eich](https://es.wik
 |   10    |    2019     | ES2019 es ES10.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ESNext  |             | ...y así sucesivamente                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-## Características y gramática
+## Caracteristicas y gramatica
 
 ### Isomorfismo
 
